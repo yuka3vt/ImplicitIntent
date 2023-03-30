@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public void tampilKalkulator(View view){
         try {
             Intent buka = new Intent(Intent.ACTION_MAIN);
-            buka.addCategory(Intent.CATEGORY_LAUNCHER);
+            buka.addCategory(Intent.ACTION_MAIN);
 
             ComponentName cn = new ComponentName("com.android.calculator2","com.android.calculator2.Calculator");
             buka.setComponent(cn);
@@ -83,6 +83,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void tampilGoogleDrive(View view){
+        try {
+            Intent buka = new Intent(Intent.ACTION_MAIN);
+            buka.addCategory(Intent.ACTION_MAIN);
 
+            ComponentName cn = new ComponentName("com.google.android.apps.docs","com.google.android.apps.docs.add.NewMainProxyActivity");
+            buka.setComponent(cn);
+
+            startActivity(buka);
+        }catch (ActivityNotFoundException anfe){
+            Toast.makeText(getApplicationContext(), "Aplikasi Tidak ditemukan", Toast.LENGTH_SHORT).show();
+        }
+    }
 
 }

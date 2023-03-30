@@ -294,5 +294,25 @@
                     android:fontFamily="sans-serif-condensed-light"/>
             </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_tombol"
+                android:drawableBottom="@drawable/baseline_add_to_drive_24"
+                android:onClick="tampilGoogleDrive"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Google Drive"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-light"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
