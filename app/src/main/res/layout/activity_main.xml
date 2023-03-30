@@ -11,48 +11,49 @@
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="15dp"
-            android:paddingBottom="30dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:text="All apps"
-                android:textSize="15sp"
-                android:textColor="@color/black"
-                android:fontFamily="sans-serif-condensed-light"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Manage"
-                android:layout_alignParentRight="true"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:fontFamily="sans-serif-condensed-light"/>
-        </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:orientation="horizontal">
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="All apps"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="viewEnd"
+                android:text="Manage"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-light"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:layout_weight="4">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_call_24"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
                     android:onClick="tampilTelepon"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Telepon"
                     android:textAlignment="center"
@@ -65,14 +66,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_chat_24"
                     android:onClick="tampilSms"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Pesan"
                     android:textAlignment="center"
@@ -85,14 +86,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_calendar_month_24"
                     android:onClick="tampilKalender"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Kalender"
                     android:textAlignment="center"
@@ -105,14 +106,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_open_in_browser_24"
                     android:onClick="tampilBrowser"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Browser"
                     android:textAlignment="center"
@@ -124,22 +125,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="4"
-            android:paddingTop="30dp">
+            android:paddingBottom="10dp"
+            android:layout_weight="4">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_calculate_24"
                     android:onClick="tampilKalkulator"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Kalkulator"
                     android:textAlignment="center"
@@ -152,14 +153,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_contacts_24"
                     android:onClick="tampilKontak"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Kontak"
                     android:textAlignment="center"
@@ -172,14 +173,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_image_24"
                     android:onClick="tampilGaleri"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Galeri"
                     android:textAlignment="center"
@@ -192,14 +193,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_wifi_24"
                     android:onClick="tampilWifi"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="WiFi"
                     android:textAlignment="center"
@@ -218,14 +219,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_music_note_24"
                     android:onClick="tampilSound"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sound"
                     android:textAlignment="center"
@@ -238,14 +239,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_airplanemode_active_24"
                     android:onClick="tampilAirplane"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Air Plane Mode"
                     android:textAlignment="center"
@@ -258,14 +259,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_bluetooth_24"
                     android:onClick="tampilBluetooth"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bluetooth"
                     android:textAlignment="center"
@@ -278,14 +279,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <Button
-                    android:layout_gravity="center"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_tombol"
+                    android:drawableBottom="@drawable/baseline_android_24"
                     android:onClick="tampilAplikasi"/>
                 <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="60dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Aplikasi"
                     android:textAlignment="center"
